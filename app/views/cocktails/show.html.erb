@@ -1,0 +1,15 @@
+<div class="container">
+
+
+  <div class="row">
+     <div class="col-xs-12 col">
+        <%= render 'shared/card', cocktail: @cocktail %>
+      </div>
+  </div>
+  <div class="btn">
+      <%= link_to 'Ajouter des ingrédients', new_cocktail_dose_path(@cocktail), class: 'btn btn-link' %>
+  </div>
+</div>
+
+
+

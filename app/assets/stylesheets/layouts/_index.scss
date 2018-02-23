@@ -1,0 +1,24 @@
+// Import your layouts CSS files here.
+// Examples:
+// @import "dashboard";
+// @import "profile";
+// @import "map";
+
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Rancho', cursive;
+  font-size: 80px;
+}
+
+
+body {
+  background-color:  rgba(0, 0, 0, 0.9);
+  background-size: 100%;
+
+}
+
+.btn {
+  text-align: center;
+}

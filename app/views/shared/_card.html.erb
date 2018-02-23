@@ -1,0 +1,17 @@
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?ixlib=rb-0.3.5&s=eefbc24b6721901ec791a4982797d329&auto=format&fit=crop&w=634&q=80');">
+  <div class="card-category"></div>
+    <h4><%= cocktail.name%></h4>
+      <div class="card-description" >
+        <ul>
+        <% cocktail.doses.each do |dose| %>
+          <li>
+            <%= dose.description + " " + dose.ingredient.name %>
+          </li>
+        <% end %>
+
+        </ul>
+
+      </div>
+  <img class="card-user" <%= image_tag "cocktail.jpeg" %>
+  <a class="card-link" href="<%= cocktail_path(cocktail)%>" ></a>
+</div>
